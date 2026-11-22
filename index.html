@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="https://live-aigc-dh-cloud.oss-cn-zhangjiakou.aliyuncs.com/gatswei/tmp/oss_cp/learning_to_arrive_demo_20261111/">
+  <link rel="canonical" href="https://gatswei.github.io/Taomate-F1-Demo/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf6">
+  <meta name="description" content="Taomate-F1: streaming first-and-last-frame audio-video generation. Guide each chapter with a new destination, and carry the story forward.">
+  <meta property="og:title" content="Taomate-F1 — A beginning. An ending. A story in between.">
+  <meta property="og:description" content="Selected first-and-last-frame video generation, from five seconds to three minutes.">
+  <title>Taomate-F1 · First-to-Last Frame Video Generation</title>
+  <link rel="icon" href="assets/mark-f1.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="styles.css?v=view1">
+  <link rel="stylesheet" href="f1.css?v=view1">
+  <script src="data.js?v=f1-20261113" defer></script>
+  <script src="story-data.js?v=20261113-1" defer></script>
+  <script src="app.js?v=view1" defer></script>
+  <script src="f1.js?v=view1" defer></script>
+<script src="demo-media.js?v=view1" defer></script>
+</head>
+<body>
+  <a class="skip" href="https://gatswei.github.io/Taomate-F1-Demo/#main">Skip to content</a>
+  <main id="main">
+  <div class="hero-surface f1-hero-surface">
+    <div class="hero-background" aria-hidden="true"><video controlslist="nodownload" draggable="false" id="hero-background-video" muted autoplay loop playsinline preload="none" poster="assets/f1/chapter-01-first.webp" tabindex="-1"></video></div>
+    <header class="header shell">
+      <a class="brand" href="https://gatswei.github.io/Taomate-F1-Demo/#" aria-label="Taomate-F1 home"><img draggable="false" src="assets/mark-f1.svg" width="30" height="30" alt="">Taomate<span>-F1</span></a>
+      <nav aria-label="Main navigation"><a href="https://gatswei.github.io/Taomate-F1-Demo/#story">The story</a><a href="https://gatswei.github.io/Taomate-F1-Demo/#worlds">Demos</a><a href="https://gatswei.github.io/Taomate-F1-Demo/#method">Method</a><a href="https://gatswei.github.io/Taomate-F1-Demo/#research">Research</a></nav>
+      <a class="header-link" href="https://gatswei.github.io/Taomate-F1-Demo/#resources">Open research <span aria-hidden="true">↗</span></a>
+    </header>
+    <section class="hero shell f1-hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ALIBABA TAOLIVE AIGC TEAM</p>
+        <h1 id="hero-title">Taomate<span>-F1</span></h1>
+        <h2>Choose the ending.<br>Keep the story <em>going.</em></h2>
+        <p class="hero-description">Streaming First-and-Last-Frame<br>Audio-Video Generation</p>
+        <p class="hero-detail">A first frame, a destination, and a story in between.<br>Turn each ending into a new beginning.</p>
+        <div class="hero-actions"><a class="button primary" href="https://gatswei.github.io/Taomate-F1-Demo/#story">Follow the story <span aria-hidden="true">↘</span></a><a class="button secondary" href="https://gatswei.github.io/Taomate-F1-Demo/#method">How it continues <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-meta"><span>GUIDED BY KEYFRAMES</span><i></i><span>BUILT TO CONTINUE</span></div>
+      </div>
+      <div class="f1-hero-art" aria-label="Selected generated scenes">
+        <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+        <figure class="hero-scene hero-scene-landscape">
+          <video controlslist="nodownload" draggable="false" id="hero-story-preview" muted loop playsinline preload="none" poster="assets/f1/chapter-01-first.webp" aria-label="Landscape animated story preview"></video>
+          <figcaption>A LIGHT THAT CARRIES ON</figcaption>
+          <a class="hero-expand" href="https://gatswei.github.io/Taomate-F1-Demo/#story" aria-label="Watch the full landscape animated story">↗</a>
+        </figure>
+        <figure class="hero-scene hero-scene-portrait hero-scene-person">
+          <video controlslist="nodownload" draggable="false" data-hero-demo="portrait-case_002_10s" muted loop playsinline preload="none" poster="assets/images/portrait-case_002_10s-poster.webp" aria-label="A softer layer, portrait video preview"></video>
+          <figcaption>A SOFTER LAYER</figcaption>
+          <button class="hero-expand" data-open="portrait-case_002_10s" aria-label="Expand A softer layer">↗</button>
+        </figure>
+        <figure class="hero-scene hero-scene-portrait hero-scene-racing">
+          <video controlslist="nodownload" draggable="false" data-hero-demo="generic-case_001_5s-iter1500" muted loop playsinline preload="none" poster="assets/images/generic-case_001_5s-iter1500-poster.webp" aria-label="Golden-hour racing, portrait video preview"></video>
+          <figcaption>GOLDEN-HOUR RACING</figcaption>
+          <button class="hero-expand" data-open="generic-case_001_5s-iter1500" aria-label="Expand Golden-hour racing">↗</button>
+        </figure>
+      </div>
+      <a class="scroll-cue" href="https://gatswei.github.io/Taomate-F1-Demo/#story">SCROLL INTO THE STORY <span aria-hidden="true">↓</span></a>
+      <button id="hero-motion" class="hero-motion" aria-label="Pause hero video previews">Ⅱ Pause previews</button>
+    </section>
+  </div>
+
+  <section id="story" class="story-section" aria-labelledby="story-title"><div class="shell section">
+    <div class="section-heading"><div><p class="eyebrow">01 / AN OPEN-ENDED STORY</p><h2 id="story-title">Every ending.<br><em>A new beginning.</em></h2></div><p>Give the next chapter a new destination.<br>The generated boundary frame and audiovisual history carry forward, connecting one guided transition to the next.</p></div>
+    <div class="story-layout">
+      <div class="story-main">
+        <div class="story-video-head"><span>A LIGHT THAT CARRIES ON</span><span>LANDSCAPE · MANDARIN AUDIO</span></div>
+        <div class="story-screen"><video controlslist="nodownload" draggable="false" id="story-video" controls playsinline preload="none" poster="assets/f1/chapter-01-first.webp" aria-label="A light that carries on, full three-minute animated story"></video><div class="story-arrival" aria-hidden="true">A new destination guides the next chapter <span>↙</span></div></div>
+        <div class="story-player-foot"><button id="story-play" class="button primary compact">▶ Play the story</button><span id="story-clock">00:00 / 03:00</span></div>
+        <p id="story-status" class="playback-status" role="status"></p>
+      </div>
+      <aside class="anchor-console" aria-label="Chapter conditioning frames">
+        <div class="console-top"><span id="chapter-number">CHAPTER 01</span><span id="chapter-range">00:00–00:30</span></div>
+        <figure class="control-anchor carry-anchor"><span class="frame-preview"><img draggable="false" id="carry-image" width="1376" height="768" alt="Input first frame for this chapter"></span><figcaption><b>01</b><span id="carry-label">Begin with a first frame</span></figcaption></figure>
+        <div class="carry-path" aria-hidden="true"><span></span><i>↓</i><span></span></div>
+        <figure class="control-anchor target-anchor"><span class="frame-preview"><img draggable="false" id="target-image" width="1376" height="768" alt="Input target frame for this chapter"></span><figcaption><b>02</b><span>Introduce the next target</span></figcaption><div class="flying-target" aria-hidden="true"></div></figure>
+        <div class="context-thread"><span class="thread-dot"></span> Generated frame + audiovisual context <b>↵</b></div>
+      </aside>
+    </div>
+    <div class="story-rail" id="chapter-rail" aria-label="Choose a 30-second chapter"></div>
+    <div class="continuation-line"><div class="flow-steps" aria-label="Continuation process"><span class="active">Inherit the frame</span><i>→</i><span>Guide with a new target</span><i>→</i><span>Carry the story forward</span></div><button id="handoff-preview" class="text-button">↻ Preview the handoffs</button></div>
+    <div class="continue-story"><span class="continue-path" aria-hidden="true"></span><a href="https://gatswei.github.io/Taomate-F1-Demo/#method"><span class="continue-plus" aria-hidden="true">+</span><span>Continue your own <em>story...</em><small>A new target. Another chapter. The same continuing stream.</small></span><span class="continue-arrow" aria-hidden="true">↗</span></a><span class="continue-path" aria-hidden="true"></span></div>
+    <p class="story-note">Shown here: six connected 30-second chapters. Each chapter starts from the previous generated boundary, rather than replacing it with a reference image. The continuation design can be repeated with further targets.</p>
+    <details class="prompt-details story-details"><summary>Chapter prompts & presentation notes</summary><div id="story-prompt" class="prompt-text"></div><p>iter1700 · 1376 × 768 · 24 fps · 180 seconds. 8-step video inference with reference-conditioned Mandarin speech. This presentation uses the existing gentle background-exposure correction, with the original audio retained. The animation illustrates conditioning; it is not a live generation service.</p></details>
+  </div></section>
+
+  <div class="facts shell"><div><strong>2 <span>keyframes</span></strong><p>Define a transition</p></div><div><strong>3 <span>steps</span></strong><p>Reported model configuration</p></div><div><strong>AV <span>context</span></strong><p>Carry the generated history forward</p></div><div><strong>Next <span>chapter</span></strong><p>Add another destination</p></div></div>
+
+  <section id="comparison" class="shell section" aria-labelledby="comparison-title">
+    <div class="section-heading"><div><p class="eyebrow">02 / SAME KEYFRAMES, TWO METHODS</p><h2 id="comparison-title">Compare the <em>journey.</em></h2></div><p>The same first and last images, shown side by side.<br>Switch between the three selected scenes and play both results together.</p></div>
+    <div class="comparison-toolbar"><div id="comparison-tabs" class="tabs" role="tablist" aria-label="Comparison scene"></div><div class="compare-actions"><button id="sync-play" class="button primary compact">▶ Play together</button><button id="sync-reset" class="text-button">↺ Restart</button></div></div>
+    <div class="comparison-panel" id="comparison-panel" role="tabpanel">
+      <aside class="comparison-anchors"><p class="eyebrow">THE KEYFRAMES</p><div class="anchor-pair" id="comparison-anchors"></div><p class="anchor-note">Identical reference images for both methods.</p></aside>
+      <div class="compare-result ours"><div class="player-heading"><h3>Taomate-F1 <span>iter1500</span></h3><span class="method-dot"></span></div><video controlslist="nodownload" draggable="false" id="ours-video" controls playsinline preload="none"></video><div class="player-foot"><span id="comparison-case"></span></div></div>
+      <div class="compare-result"><div class="player-heading"><h3>H3 Base</h3><span class="baseline-tag">BASELINE</span></div><video controlslist="nodownload" draggable="false" id="base-video" controls playsinline preload="none"></video><div class="player-foot"><span>Same inputs · 5.17s</span></div></div>
+    </div>
+    <div class="comparison-bottom"><details class="prompt-details"><summary>View the input prompt</summary><div id="comparison-prompt" class="prompt-text"></div></details><p class="small-note">Both videos start muted for comparison. Unmute one player to listen.</p></div>
+    <p id="comparison-status" class="playback-status" role="status"></p>
+  </section>
+
+  <section id="worlds" class="section-tint"><div class="shell section">
+    <div class="section-heading"><div><p class="eyebrow">03 / SMALL STORIES, DIFFERENT WORLDS</p><h2>Every scene, a new <em>possibility.</em></h2></div><p>Performance, motion and nature.<br>Five selected short sequences from our general-scene collection.</p></div>
+    <div class="gallery-toolbar"><div class="filters" id="world-filters" role="group" aria-label="Filter general scenes"></div><span id="world-count" class="gallery-hint" aria-live="polite"></span></div>
+    <div id="world-gallery" class="gallery"></div>
+    <p class="section-footnote">Click a scene to play, inspect its keyframes and read the prompt. <span>Original full-frame video · No cropped previews</span></p>
+  </div></section>
+
+  <section id="long-form" class="shell section" aria-labelledby="long-title">
+    <div class="section-heading"><div><p class="eyebrow">04 / BEYOND A BRIEF MOMENT</p><h2 id="long-title">Let the scene <em>unfold.</em></h2></div><p>Four full-minute examples across performance and portraits.<br>Jump through the sequence, from its beginning to its final frame.</p></div>
+    <div class="long-layout">
+      <aside class="long-sidebar"><div class="duration-display"><strong>01:00</strong><span>FULL-LENGTH EXAMPLES</span></div><div id="long-scenes" class="long-scenes" role="tablist" aria-label="One-minute scene"></div></aside>
+      <div class="long-viewer"><div class="long-video-heading"><div><span id="long-collection" class="eyebrow"></span><h3 id="long-name"></h3></div></div><div class="long-stage"><video controlslist="nodownload" draggable="false" id="long-video" controls playsinline preload="none"></video><div id="long-anchors" class="long-anchors"></div></div><div class="time-navigation" aria-label="Jump to a moment"><span>JUMP TO</span><button data-time="0">00:00</button><button data-time="15">00:15</button><button data-time="30">00:30</button><button data-time="45">00:45</button><button data-time="59.958333">Last frame</button></div><details class="prompt-details"><summary>View the input prompts</summary><div id="long-prompt" class="prompt-text"></div></details></div>
+    </div>
+  </section>
+
+  <section id="portraits" class="section-tint"><div class="shell section">
+    <div class="section-heading"><div><p class="eyebrow">05 / PEOPLE & EVERYDAY MOMENTS</p><h2>A gesture.<br><em>A conversation.</em></h2></div><p>Seven ten-second examples from our portrait collection.<br>Each scene is guided by its own first and last input images.</p></div>
+    <div class="portrait-intro"><span class="collection-label">PORTRAIT COLLECTION</span><span>10-second sequences · First & last frame conditioning</span></div>
+    <div id="portrait-gallery" class="gallery portrait-gallery"></div>
+  </div></section>
+
+  <section id="method" class="method-section"><div class="shell section">
+    <div class="section-heading"><div><p class="eyebrow">06 / THE METHOD</p><h2>Learn the journey.<br><em>Learn to arrive.</em></h2></div><p>Taomate-F1 trains a causal audiovisual generator to connect two prescribed images. Its training connects local generation decisions to the quality of the complete transition.</p></div>
+    <div class="method-flow" aria-label="First frame and target frame guide a causal sequence of audiovisual blocks"><div class="method-end"><span>FIRST FRAME</span><img draggable="false" src="assets/f1/chapter-01-first.webp" loading="lazy" alt="Starting image"></div><div class="method-blocks"><div class="target-guide"><span>Target image · positioned at the terminal time</span><span>↓ &nbsp;&nbsp; ↓ &nbsp;&nbsp; ↓</span></div><div class="block-row"><span>AV<small>block 1</small></span><i>→</i><span>AV<small>block 2</small></span><i>→</i><span>AV<small>block …</small></span></div><p>Clean audiovisual history moves forward →</p></div><div class="method-end"><span>TARGET FRAME</span><img draggable="false" src="assets/f1/chapter-01-last.webp" loading="lazy" alt="Target image"></div></div>
+    <div class="method-notes"><article><span>01</span><h3>Temporal conditioning & trajectory supervision</h3><p>The target image is encoded at its global terminal time. Paired teacher trajectories supervise intermediate spatial structure and temporal change, alongside endpoint reconstruction and distribution matching.</p></article><article><span>02</span><h3>Full-chain denoising gradients</h3><p>Output supervision reaches every retained denoising step within a block. Early computations learn how they affect the content that is ultimately emitted.</p></article><article><span>03</span><h3>Cross-Block GRPO</h3><p>Later policy losses propagate through selected history paths into earlier content generation. Quality and terminal-image rewards express preferences over complete audiovisual rollouts.</p></article></div>
+    <div class="method-summary"><h3>Guide the next chapter, without erasing the past.</h3><p>The continuation demonstration reuses the actual generated boundary frame and retained audiovisual context, then introduces another target image. This turns a single first-to-last transition into a repeatable storytelling process.</p></div>
+  </div></section>
+  <section id="research" class="shell section research-section">
+    <div class="section-heading"><div><p class="eyebrow">07 / RESEARCH</p><h2>Control that lasts<br><em>beyond the short clip.</em></h2></div><p>The manuscript evaluates 10-second and one-minute generation on 100 general-purpose FL2VA cases, alongside short and long qualitative comparisons.</p></div>
+    <div class="research-cards"><article><span>10s GENERATION</span><strong>0.8983</strong><h3>Temporal stability</h3><p>Reported Taomate-F1 result</p></article><article><span>1min GENERATION</span><strong>0.9211</strong><h3>Temporal stability</h3><p>Reported Taomate-F1 result</p></article><article><span>1min GENERATION</span><strong>0.2198</strong><h3>Text–video alignment</h3><p>Reported VABench result</p></article><article><span>1min GENERATION</span><strong>0.990</strong><h3>Visual question answering</h3><p>Reported VABench result</p></article></div>
+    <p class="section-footnote">Values reproduced from the manuscript’s main-results table. These benchmark measurements are separate from the curated three-minute continuation demonstration.</p>
+  </section>
+  <section id="resources" class="resources-section"><div class="shell section">
+    <p class="eyebrow">08 / TAOMATE-F1</p><h2>The next chapter<br>is <em>yours.</em></h2><p>Streaming first-and-last-frame audio-video generation.<br>Research materials will be shared here as they become available.</p>
+    <div class="resource-cards"><div><span>↗</span><h3>Paper</h3><p>Release forthcoming</p></div><div><span>〈/〉</span><h3>Code</h3><p>Release forthcoming</p></div><div><span>◇</span><h3>Model</h3><p>Release forthcoming</p></div></div>
+    <a class="text-link" href="https://gatswei.github.io/Taomate-F1-Demo/#story">Continue the story ↑</a>
+  </div></section>
+  </main>
+  <footer class="footer shell"><div><a class="brand" href="https://gatswei.github.io/Taomate-F1-Demo/#"><img draggable="false" src="assets/mark-f1.svg" width="26" height="26" alt="">Taomate<span>-F1</span></a><p>First-and-last-frame audiovisual storytelling.</p></div><p>Alibaba TaoLive AIGC Team · November 2026<br>Visual design inspired by <a href="https://taoliveaigc.github.io/TaoMate-HD/" target="_blank" rel="noopener">TaoMate-HD</a>.</p><a class="back-top" href="https://gatswei.github.io/Taomate-F1-Demo/#">BACK TO TOP ↑</a><small>Images and videos are for viewing only.</small></footer>
+  <dialog id="demo-dialog" aria-labelledby="modal-title"><div class="modal-header"><div><p id="modal-eyebrow" class="eyebrow"></p><h2 id="modal-title"></h2></div><button id="modal-close" class="close-button" aria-label="Close video">✕</button></div><div class="modal-grid"><div class="modal-player"><video controlslist="nodownload" draggable="false" id="modal-video" controls playsinline preload="none"></video><div class="player-foot"><span id="modal-info"></span></div></div><aside><div id="modal-anchors" class="modal-anchors"></div><p id="modal-audio" class="small-note"></p><details class="prompt-details"><summary>View the input prompts</summary><div id="modal-prompt" class="prompt-text"></div></details></aside></div><p id="modal-status" class="playback-status" role="status"></p></dialog>
+  <noscript><div class="no-script">JavaScript is needed for the interactive video galleries.</div></noscript>
+</body>
+</html>
